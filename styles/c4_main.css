@@ -1,12 +1,31 @@
 /* the styles for the elements */
+:root{
+	--global-color-1: #800000;
+}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
+	font-size: 100%;
 }
 
 /* the styles for the header */
 header img {
 	float: left;
+}
+
+header h2 {
+	color: var(--global-color-1);
+	font-size: 170%;
+	text-indent: 30px;
+}
+
+header h3 {
+	font-size: 130%;
+	text-indent: 30px;
+}
+
+.shadow{
+	text-shadow: 2px 2px 1px var(--global-color-1);
 }
 
 /* the styles for the main content */
@@ -17,11 +36,17 @@ main h1 {
 	font-size: 150%;
 }
 main h2 {
-	color: var(--global-color-1);
 	font-size: 130%;
 }
 main h3 {
 	font-size: 105%;
 }
 
+a:hover{
+	font-style: italic;
+}
+
 /* the styles for the footer */
+footer p {
+	text-align: center;
+}
